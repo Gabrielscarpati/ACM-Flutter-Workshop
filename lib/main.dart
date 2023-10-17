@@ -12,14 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
-      ),
       home: const ProfileScreen(),
     );
   }
 }
+
+//start typing here
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -79,7 +77,7 @@ class ProfileScreen extends StatelessWidget {
                   const CircleAvatar(
                     radius: 60,
                     backgroundImage: NetworkImage(
-                        'https://avatars.githubusercontent.com/u/84779266?s=400&u=a49fc1f2101e326a2bdb214ad9b274d44bcc2d5f&v=4'),
+                        'https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpZGVybWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'),
                   ),
                   Positioned(
                     bottom: 0,
@@ -151,6 +149,9 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
+              //Next container starts here
+
               SizedBox(
                 height: spacing,
               ),
@@ -186,6 +187,9 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
+              //Next container starts here
+
               SizedBox(
                 height: spacing,
               ),
@@ -222,6 +226,9 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
+              //Next container starts here
+
               SizedBox(
                 height: spacing,
               ),
@@ -257,7 +264,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
               ),
-            ],
+            ], //closing tag for children
           ),
         ),
       ),
