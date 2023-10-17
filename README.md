@@ -1,7 +1,6 @@
-# calculator
+# Gabriel and Mihir Profile Latest Repository
 
-A new Flutter project.
-
+Profile Page in Flutter along with data type dart file
 ## Getting Started
 
 This project is a starting point for a Flutter application.
