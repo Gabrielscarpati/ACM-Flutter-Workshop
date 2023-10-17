@@ -192,7 +192,7 @@ class ProfileScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       const SizedBox(width: 16),
-                      const Icon(CupertinoIcons.person),
+                      const Icon(Icons.email),
                       const SizedBox(width: 16),
                       Expanded(
                         child: TextField(
@@ -231,7 +231,7 @@ class ProfileScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       const SizedBox(width: 16),
-                      const Icon(CupertinoIcons.person),
+                      const Icon(CupertinoIcons.phone),
                       const SizedBox(width: 16),
                       Expanded(
                         child: TextField(
@@ -269,7 +269,7 @@ class ProfileScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       const SizedBox(width: 16),
-                      const Icon(CupertinoIcons.person),
+                      const Icon(CupertinoIcons.location_solid),
                       const SizedBox(width: 16),
                       Expanded(
                         child: TextField(
