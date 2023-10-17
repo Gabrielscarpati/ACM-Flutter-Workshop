@@ -33,11 +33,18 @@ class ProfileScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
+        backgroundColor: Colors.white,
+
+        //Edit profile starts here
+
         bottomNavigationBar: Padding(
           padding: const EdgeInsets.all(12),
           child: ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
               backgroundColor: Colors.yellow.shade600,
               padding: const EdgeInsets.all(15),
             ),
@@ -51,6 +58,9 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
         ),
+
+        //Appbar starts here
+
         appBar: AppBar(
           leading: const Icon(
             Icons.arrow_back_ios,
@@ -66,7 +76,9 @@ class ProfileScreen extends StatelessWidget {
           ),
           backgroundColor: Colors.white,
         ),
-        backgroundColor: Colors.white,
+
+        //padding for whole body
+
         body: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
@@ -74,11 +86,16 @@ class ProfileScreen extends StatelessWidget {
               SizedBox(height: spacing * 2),
               Stack(
                 children: [
+                  //Profile pic starts here
+
                   const CircleAvatar(
                     radius: 60,
                     backgroundImage: NetworkImage(
                         'https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BpZGVybWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'),
                   ),
+
+                  //Camera info starts here
+
                   Positioned(
                     bottom: 0,
                     right: 0,
@@ -115,6 +132,9 @@ class ProfileScreen extends StatelessWidget {
                   )
                 ],
               ),
+
+              //Textboxes start here
+
               SizedBox(height: spacing),
               Container(
                 decoration: BoxDecoration(
@@ -270,6 +290,7 @@ class ProfileScreen extends StatelessWidget {
       ),
     );
   }
+}
 
 /*  itemProfile(String title, String subtitle, IconData iconData) {
     return Container(
@@ -293,8 +314,6 @@ class ProfileScreen extends StatelessWidget {
       ),
     );
   }*/
-}
-
 /*import 'package:flutter/material.dart';
 
 class ProfileItem extends StatelessWidget {
